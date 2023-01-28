@@ -1,1 +1,4 @@
-require("lua-config.basic")
+require("basic")
+require("keybindings")
+require("neovide")
+
