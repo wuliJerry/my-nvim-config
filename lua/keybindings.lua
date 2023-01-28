@@ -7,3 +7,6 @@ vim.keymap.set('n', "<Up>", "<Nop>")
 vim.keymap.set('n', "<Down>", "<Nop>")
 vim.keymap.set('n', "<Left>", "<Nop>")
 vim.keymap.set('n', "<Right>", "<Nop>")
+
+vim.api.nvim_set_keymap("n", "<C-S-c>", ":normal! \"+y<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-S-v>", ":normal! \"+gP<CR>", {noremap = true, silent = true})

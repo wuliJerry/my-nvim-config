@@ -1,7 +1,6 @@
 if vim.g.neovide then
 
-	print("hello world")
-	vim.opt.guifont = {"FiraCode Nerd Font Mono", "h10"}
+	vim.opt.guifont = {"FiraCode Nerd Font Mono", ":h12"}
 	vim.g.neovide_scale_factor = 1.0
 
 	vim.g.neovide_floating_blur_amount_x = 2.0
