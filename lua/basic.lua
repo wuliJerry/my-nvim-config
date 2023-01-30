@@ -5,9 +5,15 @@ vim.opt.smartcase 	= true  -- Ignore uppercase letters unless the search term ha
 vim.opt.hlsearch	= true  -- Hightlight the result of search
 vim.opt.wrap		= true  -- Makes the text of long lines always visible
 vim.opt.breakindent	= true  -- Preserve the indentation of a virtual line. 
-vim.opt.tabstop 	= 4     
+vim.opt.tabstop 	= 4
 vim.opt.shiftwidth 	= 4
 vim.opt.expandtab 	= false -- Transform a Tab into Spaces
 vim.opt.relativenumber = true
 vim.opt.rnu			= true
 
+vim.cmd [[
+augroup RestoreCursorShapeOnExit
+    autocmd!
+    autocmd VimLeave * set guicursor=a:ver20
+augroup END
+]]
