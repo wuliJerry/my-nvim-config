@@ -16,3 +16,4 @@ require("plugin-config.nvim-cmp")
 
 -- Lsp configuration
 require("lsp")
+require("lsp.lsp_signature")

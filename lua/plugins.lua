@@ -59,4 +59,8 @@ return packer.startup(function(use)
 
 	use 'onsails/lspkind.nvim'
 
+	use {
+  		"ray-x/lsp_signature.nvim",
+	}
+
 end)
